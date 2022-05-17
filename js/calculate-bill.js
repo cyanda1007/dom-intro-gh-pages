@@ -29,6 +29,9 @@ if (typeof billString.value == 'string'){
   totalSms = (smsCount * 0.75)
   totalAmount = (totalCall + totalSms)
   
+  total.classList.remove('warning');
+  total.classList.remove('danger');
+
   if(totalAmount > 20 && totalAmount < 30){
     
     total.classList.add('warning')
