@@ -9,7 +9,7 @@ var smsTotal = 0;
 
 
 function billTotal(){
-  var billTypeEntered = billTypeText.value.trim();
+  var billTypeEntered = billTypeText.value.trim().toLowerCase();
   if(billTypeEntered === "call"){
     callsTotal += 2.75
   }
